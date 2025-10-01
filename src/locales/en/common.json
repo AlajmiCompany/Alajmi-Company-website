@@ -1,0 +1,56 @@
+{
+  "home": "Home",
+  "company": "Company",
+  "ourProjects": "Our Projects",
+  "ourServices": "Our Services",
+  "mediaCenter": "Media Center",
+  "customers": "Customers",
+  "suppliers": "Registration Suppliers",
+  "jobs": "Jobs",
+  "suggestions": "Suggestions & Complaints",
+  "contact": "Contact Us",
+  "about": "About Us",
+  "whyAjami": "Why Ajami",
+  "vision": "Company Vision",
+  "board": "Board of Directors",
+  "policy": "Health & Safety Policy",
+  "newspaper": "Newspaper",
+  "library": "Picture Library",
+  "switchLang": "العربية",
+
+  "hero":{
+  "heroTitle": "Welcome to Al Ajami Company",
+  "heroSubtitle": "Building with trust, quality, and excellence.",
+  "heroButton": "Explore Our Projects",
+  "designsTitle": "Our Designs",
+  "designsSubtitle": "Click to explore more about our work"
+},
+"services":{
+  "title": "Our Services",
+  "subtitle": "We provide innovative and reliable solutions across multiple fields.",
+  "items": [
+    {
+      "title": "Transport on Roads",
+      "desc": "Specialized in transporting goods and machinery in challenging terrains.",
+      "img": "/services/transport.png"
+    },
+    {
+      "title": "Water & Sewage Works",
+      "desc": "Execution of several water and sewage infrastructure projects.",
+      "img": "/services/water.png"
+    },
+    {
+      "title": "Road Construction & Maintenance",
+      "desc": "Main activity focused on road construction and long-term maintenance.",
+      "img": "/services/roads.png"
+    },
+    {
+      "title": "Building Construction",
+      "desc": "Commercial and residential building construction services.",
+      "img": "/services/buildings.png"
+    }
+  ]
+}
+
+
+}

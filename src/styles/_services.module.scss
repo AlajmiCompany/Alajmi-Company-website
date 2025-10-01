@@ -1,0 +1,125 @@
+.services {
+  padding: 80px 0;
+  background: #fff;
+
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary);
+  }
+
+  .subtitle {
+    font-size: 16px;
+    color: var(--muted);
+    margin-bottom: 40px;
+  }
+
+  .slider {
+    padding-bottom: 50px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    height: 100%;
+
+    &:hover {
+      transform: translateY(-8px);
+    }
+
+    img {
+      max-height: 100px;
+      margin: 0 auto 20px;
+      object-fit: contain;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--muted);
+      min-height: 60px; // يخلي كل الكروت بنفس الطول
+      margin-bottom: 16px;
+    }
+
+    .more {
+      display: inline-block;
+      font-weight: 600;
+      color: var(--secondary);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+
+  /* التحكم بالأسهم */
+.controls {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 0;
+    display: flex;
+
+  .custom-prev,
+  .custom-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.2s ease;
+
+  }
+  svg{
+    font-size: 47px;
+    cursor: pointer;
+    
+    &:hover {
+ color: rgb(126, 200, 200);
+    }
+    }
+
+  .custom-pagination {
+    display: flex;
+    gap: 8px;
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background: var(--muted);
+      border-radius: 50%;
+      transition: all 0.3s ease;
+
+      &.swiper-pagination-bullet-active {
+        background: var(--primary);
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+}
+
+html[dir="rtl"] {
+
+  .controls {
+    flex-direction: row-reverse;
+}
+}

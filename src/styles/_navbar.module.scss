@@ -1,0 +1,65 @@
+@import "./variables.scss";
+
+.navbar {
+  background-color: $dark;
+
+  .navbar-brand img {
+    max-height: 40px;
+  }
+
+  .nav-link {
+    color: $bg !important;
+    font-weight: 500;
+    margin-right: 10px;
+
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+
+  .dropdown-menu {
+    border-radius: 0;
+    background: $bg;
+
+    .dropdown-item {
+      color: $text;
+
+      &:hover {
+        background: $secondary;
+        color: $bg;
+      }
+    }
+  }
+
+  .dropdown-toggle::after {
+    display: none !important; // نشيل سهم البوتستراب الافتراضي
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+  .navbar {
+    .nav-link {
+      margin: 8px 0;
+    }
+    .dropdown-menu {
+      background: $dark;
+      .dropdown-item {
+        color: $bg;
+        &:hover {
+          background: $secondary;
+          color: $bg;
+        }
+      }
+    }
+  }
+}
+
+.navbar-toggler {
+        background-color: rgb(255 255 255) !important;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}

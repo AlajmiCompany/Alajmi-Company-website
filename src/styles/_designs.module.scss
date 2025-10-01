@@ -1,0 +1,62 @@
+.designs {
+  padding: 20px 0;
+    background: rgb(0 0 0 / 86%);
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--primary);
+  }
+
+  .section-sub {
+    margin-bottom: 30px;
+    color: var(--muted);
+  }
+
+  .scrollWrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  .scrollContent {
+    display: flex;
+    gap: 20px;
+    animation: scroll-left 10s linear infinite;
+  }
+
+  a {
+    background: #fff;
+    border-radius: 12px;
+    flex: none;
+    width: inherit;
+    padding: 6px 13px;
+    transition: transform .3s;
+    overflow: hidden;
+    display: flex;
+    gap: 13px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+    p{
+        margin: auto 0;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      display: block;
+    }
+  }
+}
+
+/* Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,60 @@
+@import "../styles/_variables.scss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: $bg;
+  color: $text;
+}
+  .dropdown-toggle::after {
+    content: none !important;
+  }
+  .navbar-expand-lg .navbar-nav {
+    align-items: center;
+}
+.navbar-custom {
+  background: $dark;
+  .nav-link {
+    color: $bg !important;
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+  .dropdown-menu {
+    border-radius: 0;
+    background: $bg;
+    .dropdown-item {
+      color: $text;
+      &:hover {
+        background: $secondary;
+        color: $bg;
+      }
+    }
+  }
+}
+
+@media(min-width: 1200px){
+    .container {
+    max-width: 1367px;
+}
+}
+.footer {
+  background: $dark;
+  color: $bg;
+  padding: 20px 0;
+  text-align: center;
+}
+.navbar-toggler {
+        background-color: rgb(255 255 255) !important;
+}
+
+
+
+html[dir="rtl"] {
+  .navbar .ms-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+}

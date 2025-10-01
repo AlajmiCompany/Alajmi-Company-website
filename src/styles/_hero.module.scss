@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url("/company-bg.jpg") center/cover no-repeat; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+   background: rgb(0 0 0 / 74%);
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+
+    h1 {
+      font-size: clamp(28px, 5vw, 52px);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border-radius: 8px;
+      background: var(--primary);
+      border: 2px solid var(--primary);
+      color: #fff;
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: var(--secondary);
+        border-color: var(--secondary);
+      }
+    }
+  }
+}
