@@ -1,0 +1,114 @@
+.projects {
+  margin: 4rem auto;
+  max-width: 1300px;
+
+  .title {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #e30613;
+  }
+
+  // Custom Tabs
+  .tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0.8rem;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2.5rem;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .tabButton {
+    flex: 0 0 auto;
+    padding: 0.6rem 1.4rem;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    background: #f8f9fa;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #444;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+
+    &:hover {
+      background: #e30613;
+      color: #fff;
+      border-color: #e30613;
+    }
+  }
+
+  .active {
+   background: linear-gradient(135deg, #db3438, #e30613);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  // Grid of cards
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+
+    .caption {
+      padding: 1rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #333;
+    }
+  }
+}
