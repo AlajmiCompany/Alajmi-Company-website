@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.scss";
 import "../styles/_variables.scss";
 import "../i18n";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Al Ajami Landing",
@@ -11,7 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="ltr">
-      <body>{children}</body>
+      <body>{children}</body>\
+      <Footer/>
     </html>
   );
 }

@@ -1,0 +1,64 @@
+.projects {
+  padding: 60px 0;
+  background: #f8f9fa;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    color: #666;
+    margin-bottom: 40px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+    max-width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .more {
+      display: inline-block;
+      background: #d32f2f;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #b71c1c;
+      }
+    }
+  }
+}

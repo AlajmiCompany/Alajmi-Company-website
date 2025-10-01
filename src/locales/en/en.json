@@ -17,14 +17,25 @@
   "newspaper": "Newspaper",
   "library": "Picture Library",
   "switchLang": "العربية",
-
+"footer": {
+  "contact": "Contact Us",
+  "phone": "Phone",
+  "address": "Address",
+  "email": "Email",
+  "workingHours": "Working Hours",
+  "lastNews": "Last News",
+  "quickLinks": "Quick Links",
+  "rights": "All rights reserved © 2023."
+}
+,
   "hero":{
-  "heroTitle": "Welcome to Al Ajami Company",
-  "heroSubtitle": "Building with trust, quality, and excellence.",
-  "heroButton": "Explore Our Projects",
-  "designsTitle": "Our Designs",
-  "designsSubtitle": "Click to explore more about our work"
+  "welcome": "Welcome to",
+  "companyName": "Abdul Ali Al-Ajmi Company",
+  "description1": "Abdul-Ali Al-Ajmi Company has specialized since its establishment in 1980 in the field of road and bridge construction and maintenance, infrastructure, worksite preparation, real estate plans development, and land transport services. , the border guards, the Ministry of Municipal and Rural Affairs, the private real estate sector, and others, and the Abdul Ali Al-Ajmi Company was known as a major company in the field of road construction throughout the Kingdom of Saudi Arabia.",
+  "description2": "TAbdul Ali Al-Ajmi Company was established in 1980 and has taken its main headquarters in the city of Riyadh and has expanded its business and established branches in Hofuf and Jaffa.",
+  "readMore": "Read more"
 },
+
 "services":{
   "title": "Our Services",
   "subtitle": "We provide innovative and reliable solutions across multiple fields.",
@@ -50,7 +61,17 @@
       "img": "/services/buildings.png"
     }
   ]
+},
+"projects":{
+  "title": "Our Projects",
+  "subtitle": "A selection of our key projects across different sectors",
+  "more": "Read more"
+},
+"awards": {
+  "title": "Our Awards"
 }
+
+
 
 
 }
