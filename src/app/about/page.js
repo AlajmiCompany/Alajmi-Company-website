@@ -1,3 +1,6 @@
-export default function About() {
-  return <div className="container py-5"><h1>About Us</h1></div>;
+"use client";
+import About from "@/components/AboutPage/About";
+
+export default function AboutPage() {
+  return <About />;
 }

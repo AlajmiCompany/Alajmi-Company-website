@@ -69,7 +69,14 @@
 },
 "awards": {
   "title": "Our Awards"
+},
+"aboutus": {
+  "title": "About Us",
+  "history": "Our History",
+  "memberships": "Memberships & Certifications",
+  "clients": "Major Clients"
 }
+
 
 
 

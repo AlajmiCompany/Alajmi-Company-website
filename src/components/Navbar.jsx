@@ -30,7 +30,7 @@ export default function CustomNavbar() {
 
             <NavDropdown title={<span>{t("company")} <FaChevronDown size={12} /></span>} id="company-dropdown">
               <NavDropdown.Item as={Link} href="/about">{t("about")}</NavDropdown.Item>
-              <NavDropdown.Item as={Link} href="/why-ajami">{t("whyAjami")}</NavDropdown.Item>
+              <NavDropdown.Item as={Link} href="/whyus">{t("whyAjami")}</NavDropdown.Item>
               <NavDropdown.Item as={Link} href="/vision">{t("vision")}</NavDropdown.Item>
               <NavDropdown.Item as={Link} href="/board">{t("board")}</NavDropdown.Item>
               <NavDropdown.Item as={Link} href="/policy">{t("policy")}</NavDropdown.Item>
