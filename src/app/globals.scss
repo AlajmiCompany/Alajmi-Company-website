@@ -49,11 +49,18 @@ body {
 .navbar-toggler {
         background-color: rgb(255 255 255) !important;
 }
-
-.swiper-backface-hidden .swiper-slide {
+.swiper {
+margin-bottom: 1rem;
+.swiper-slide{
+  text-align: center;
     justify-items: center;
-}
 
+  .mainImg{
+        width: 400px;
+    height: auto;
+  }
+}
+}
 html[dir="rtl"] {
   .navbar .ms-auto {
     margin-left: 0 !important;

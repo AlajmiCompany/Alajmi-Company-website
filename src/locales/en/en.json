@@ -36,7 +36,7 @@
   "readMore": "Read more"
 },
 
-"services":{
+"services": {
   "title": "Our Services",
   "subtitle": "We provide innovative and reliable solutions across multiple fields.",
   "items": [
@@ -59,6 +59,31 @@
       "title": "Building Construction",
       "desc": "Commercial and residential building construction services.",
       "img": "/services/buildings.png"
+    },
+    {
+      "title": "Petroleum Services",
+      "desc": "Including the maintenance of oil & gas wells and related works.",
+      "img": "/services/petroleum.png"
+    },
+    {
+      "title": "Surface Treatment & Road Safety",
+      "desc": "Important services for treating asphalt surfaces and ensuring safety.",
+      "img": "/services/safety.png"
+    },
+    {
+      "title": "Electricity Works",
+      "desc": "Implementation of electrical projects across various sectors.",
+      "img": "/services/electricity.png"
+    },
+    {
+      "title": "Rental Equipment & Heavy Vehicles",
+      "desc": "Provision of a fleet of heavy and light equipment for rent.",
+      "img": "/services/rental.png"
+    },
+    {
+      "title": "Water and Sanitation Works",
+      "desc": "Multiple projects in water treatment and sanitation infrastructure.",
+      "img": "/services/sanitation.png"
     }
   ]
 },

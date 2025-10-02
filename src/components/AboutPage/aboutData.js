@@ -16,35 +16,34 @@ const aboutData = {
     ar: "تأسست شركة عبدالعالي العجمي عام 1980 ويقع مقرها الرئيسي في الرياض. على مر السنين توسعت بفروع في الأحساء وجازان ومناطق أخرى. وتعد الشركة من أبرز شركات إنشاء الطرق في المملكة العربية السعودية."
   },
 
-    memberships: {
-        en: [
-        "ANSI-ASQ National Accreditation Board (ANAB)",
-        "International Organization for Standardization (ISO)",
-        "ISO 9001-2000 certified",
-        "ISO 14001-2004 certified",
-        "OHSAS 18001-2007 certified",
-        "ISO 9001-2008 certified",
-        "National Asphalt Pavement Association (NAPA)",
-        "Asphalt Emulsion Manufacture Association (AEMA)",
-        "International Slurry Surfacing Association (ISSA)",
-        "International Road Federation (IRF)",
-        "Gulf Road Engineering Society (GRES)"
-        ],
-        ar: [
-        "المجلس الوطني لاعتماد الجودة ANSI-ASQ (ANAB)",
-        "المنظمة الدولية للتوحيد القياسي (ISO)",
-        "شهادة ISO 9001-2000",
-        "شهادة ISO 14001-2004",
-        "شهادة OHSAS 18001-2007",
-        "شهادة ISO 9001-2008",
-        "الجمعية الوطنية لرصف الأسفلت (NAPA)",
-        "جمعية تصنيع مستحلب الأسفلت (AEMA)",
-        "الجمعية الدولية لسطحيات الطرق (ISSA)",
-        "الاتحاد الدولي للطرق (IRF)",
-        "جمعية هندسة الطرق الخليجية (GRES)"
-        ]
-    },
-
+memberships: {
+  en: [
+    { name: "ANSI-ASQ National Accreditation Board (ANAB)", img: "/memberships/ANSI.webp" },
+    { name: "International Organization for Standardization (ISO)", img: "/partners/iso.webp" },
+    { name: "ISO 9001-2000 certified", img: "/memberships/iso9001.jpg" },
+    { name: "ISO 14001-2004 certified", img: "/memberships/iso14001.webp" },
+    { name: "OHSAS 18001-2007 certified", img: "/memberships/ohsas18001.png" },
+    { name: "ISO 9001-2008 certified", img: "/memberships/iso9001-2008.webp" },
+    { name: "National Asphalt Pavement Association (NAPA)", img: "/memberships/napa.png" },
+    { name: "Asphalt Emulsion Manufacture Association (AEMA)", img: "/memberships/aema.png" },
+    { name: "International Slurry Surfacing Association (ISSA)", img: "/partners/issa.avif" },
+    { name: "International Road Federation (IRF)", img: "/partners/irf.png" },
+    { name: "Gulf Road Engineering Society (GRES)", img: "/memberships/gres.jpg" }
+  ],
+  ar: [
+    { name: "المجلس الوطني لاعتماد الجودة ANSI-ASQ (ANAB)", img: "/memberships/ANSI.webp" },
+    { name: "المنظمة الدولية للتوحيد القياسي (ISO)", img: "/partners/iso.webp" },
+    { name: "شهادة ISO 9001-2000", img: "/memberships/iso9001.jpg" },
+    { name: "شهادة ISO 14001-2004", img: "/memberships/iso14001.webp" },
+    { name: "شهادة OHSAS 18001-2007", img: "/memberships/ohsas18001.png" },
+    { name: "شهادة ISO 9001-2008", img: "/memberships/iso9001-2008.webp" },
+    { name: "الجمعية الوطنية لرصف الأسفلت (NAPA)", img: "/memberships/napa.png" },
+    { name: "جمعية تصنيع مستحلب الأسفلت (AEMA)", img: "/memberships/aema.png" },
+    { name: "الجمعية الدولية لسطحيات الطرق (ISSA)", img: "/partners/issa.avif" },
+    { name: "الاتحاد الدولي للطرق (IRF)", img: "/partners/irf.png" },
+    { name: "جمعية هندسة الطرق الخليجية (GRES)", img: "/memberships/gres.jpg" }
+  ]
+},
     clients: {
         en: [
         "Saudi Aramco Company",

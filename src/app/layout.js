@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.scss";
 import "../styles/_variables.scss";
 import "../i18n"; // هذا يضل
-
+import "../styles/globalModal.scss";
 import CustomNavbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 

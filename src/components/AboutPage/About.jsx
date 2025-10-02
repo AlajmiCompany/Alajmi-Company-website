@@ -48,15 +48,19 @@ export default function About() {
         <p>{aboutData.history[lang]}</p>
       </div>
 
-      {/* Memberships */}
-      <div className={styles.section}>
-        <h2>{t("aboutus.memberships")}</h2>
-        <div className={styles.grid}>
-          {aboutData.memberships[lang].map((item, i) => (
-            <div key={i} className={styles.card}>{item}</div>
-          ))}
-        </div>
+{/* Memberships */}
+<div className={styles.section}>
+  <h2>{t("aboutus.memberships")}</h2>
+  <div className={styles.grid}>
+    {aboutData.memberships[lang].map((item, i) => (
+      <div key={i} className={styles.card}>
+        <img src={item.img} alt={item.name} className={styles.logo} />
+        <p>{item.name}</p>
       </div>
+    ))}
+  </div>
+</div>
+
 
       {/* Clients */}
       <div className={styles.section}>
