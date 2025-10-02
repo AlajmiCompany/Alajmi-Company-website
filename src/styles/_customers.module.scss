@@ -1,26 +1,28 @@
+@use "variables" as *;
+
 .customers {
-  margin: 4rem auto;
+  margin: $space-xl auto;
   max-width: 1200px;
   text-align: center;
 
   .title {
-    font-size: 2rem;
+    font-size: $font-xxl;
     font-weight: 800;
-    margin-bottom: 2rem;
-    color: #2b307f;
+    margin-bottom: $space-xl;
+    color: $primary; 
   }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
-    grid-gap: 2rem;
-    gap: 2rem;
+    gap: $space-xl;
     align-items: center;
   }
 
   .card {
-    background: #fff;
+    background: $color-white;
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: $space-card-padding;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -30,15 +32,15 @@
     }
 
     img {
-      max-height: 80px;
+      max-height: $logo-size; // 80px
       object-fit: contain;
-      margin-bottom: 1rem;
+      margin-bottom: $space-md;
     }
 
     p {
-      font-size: 1rem;
+      font-size: $font-base;
       font-weight: 600;
-      color: #333;
+      color: $color-text-dark;
       margin: 0;
     }
   }

@@ -1,16 +1,16 @@
-@import "./variables.scss";
+@use "variables" as *;
 
 .navbar {
   background-color: $dark;
 
   .navbar-brand img {
-    max-height: 40px;
+    max-height: 40px; 
   }
 
   .nav-link {
     color: $bg !important;
     font-weight: 500;
-    margin-right: 10px;
+    margin-right: $space-sm + 0.3rem; 
 
     &:hover {
       color: $secondary !important;
@@ -32,7 +32,7 @@
   }
 
   .dropdown-toggle::after {
-    display: none !important; // نشيل سهم البوتستراب الافتراضي
+    display: none !important; 
   }
 }
 
@@ -40,12 +40,15 @@
 @media (max-width: 992px) {
   .navbar {
     .nav-link {
-      margin: 8px 0;
+      margin: $space-sm 0; // 8px
     }
+
     .dropdown-menu {
       background: $dark;
+
       .dropdown-item {
         color: $bg;
+
         &:hover {
           background: $secondary;
           color: $bg;
@@ -56,10 +59,11 @@
 }
 
 .navbar-toggler {
-        background-color: rgb(255 255 255) !important;
+  background-color: $color-white !important;
 }
+
 .logo {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: $radius-lg; // 10px
 }

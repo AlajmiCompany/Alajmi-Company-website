@@ -1,13 +1,15 @@
+@use "variables" as *;
+
 .projects {
-  margin: 4rem auto;
+  margin: $space-xl auto;
   max-width: 1300px;
 
   .title {
     text-align: center;
     font-weight: 800;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #e30613;
+    margin-bottom: $space-xl;
+    font-size: $font-xxl;
+    color: $color-primary;
   }
 
   // Custom Tabs
@@ -15,10 +17,10 @@
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    gap: 0.8rem;
+    gap: 0.8rem; 
     justify-content: flex-start;
-    padding-bottom: 0.5rem;
-    margin-bottom: 2.5rem;
+    padding-bottom: $space-sm;
+    margin-bottom: $space-xl;
     scrollbar-width: none;
 
     &::-webkit-scrollbar {
@@ -30,25 +32,25 @@
     flex: 0 0 auto;
     padding: 0.6rem 1.4rem;
     border-radius: 25px;
-    border: 1px solid #ddd;
-    background: #f8f9fa;
+    border: 1px solid $color-border;
+    background: $bg;
     font-weight: 600;
-    font-size: 0.95rem;
-    color: #444;
+    font-size: $font-md;
+    color: $color-text-dark;
     cursor: pointer;
     transition: all 0.3s ease;
     white-space: nowrap;
 
     &:hover {
-      background: #e30613;
-      color: #fff;
-      border-color: #e30613;
+      background: $color-primary;
+      color: $color-white;
+      border-color: $color-primary;
     }
   }
 
   .active {
-   background: linear-gradient(135deg, #db3438, #e30613);
-    color: #fff;
+    background: linear-gradient(135deg, #db3438, $color-primary);
+    color: $color-white;
     border: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   }
@@ -57,15 +59,15 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
+    gap: $space-xl;
   }
 
   .card {
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    border-radius: 15px;
-    background: #fff;
+    border-radius: $radius-xl; // 15px
+    background: $color-white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -93,7 +95,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: $color-white;
       font-weight: 600;
       font-size: 1.1rem;
       transition: opacity 0.3s ease;
@@ -104,11 +106,11 @@
     }
 
     .caption {
-      padding: 1rem;
+      padding: $space-md;
       text-align: center;
       font-weight: 600;
-      font-size: 1rem;
-      color: #333;
+      font-size: $font-base;
+      color: $color-text-dark;
     }
   }
 }

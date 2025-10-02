@@ -1,55 +1,58 @@
+@use "variables" as *;
+
 .hero {
   position: relative;
-  padding: 80px 0;
+  padding: $hero-padding-y 0;
   background: linear-gradient(
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
     url("/company-bg.jpg") center/cover no-repeat;
-  color: #fff;
+  color: $color-white;
 
   .subtitle {
-    color: #e63946;
-    font-size: 20px;
+    color: $color-accent;
+    font-size: $font-hero-subtitle;
     font-weight: bold;
   }
 
   .title {
-    font-size: 36px;
+    font-size: $font-hero-title;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: $space-md + $space-sm; 
   }
 
   .desc {
-    font-size: 16px;
-   margin-bottom: 2rem;
+    font-size: $font-hero-text;
+    margin-bottom: $space-xl;
     line-height: 1.7;
   }
 
   .btn {
-    background: #e63946;
-    padding: 12px 24px;
-    color: #fff;
-    border-radius: 6px;
+    background: $color-accent;
+    padding: $space-sm $space-lg; // 12px 24px
+    color: $color-white;
+    border-radius: $radius-sm;
     text-decoration: none;
     transition: 0.3s;
+
     &:hover {
-      background: #c72c38;
+      background: $color-accent-dark;
     }
   }
 
   .slider {
     .swiper-button-prev,
     .swiper-button-next {
-      color: #fff;
-      font-size: 24px;
+      color: $color-white;
+      font-size: $font-icon-md; // 24px
     }
 
     img {
-      border-radius: 15px;
+      border-radius: $radius-xl;
       width: 100%;
       height: auto;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
     }
   }
 }

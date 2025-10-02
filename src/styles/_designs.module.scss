@@ -1,16 +1,18 @@
+@use "variables" as *;
+
 .designs {
-  padding: 20px 0;
-    background: rgb(0 0 0 / 86%);
+  padding: $space-md 0;
+  background: rgba(0, 0, 0, 0.86);
 
   h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: var(--primary);
+    font-size: 2rem; // 32px ≈ 2rem
+    margin-bottom: $space-sm;
+    color: $primary;
   }
 
   .section-sub {
-    margin-bottom: 30px;
-    color: var(--muted);
+    margin-bottom: $space-lg + $space-sm; 
+    color: $muted;
   }
 
   .scrollWrapper {
@@ -21,31 +23,32 @@
 
   .scrollContent {
     display: flex;
-    gap: 20px;
+    gap: $space-md; // 20px
     animation: scroll-left 10s linear infinite;
   }
 
   a {
-    background: #fff;
-    border-radius: 12px;
+    background: $color-white;
+    border-radius: $radius-lg;
     flex: none;
     width: inherit;
-    padding: 6px 13px;
-    transition: transform .3s;
+    padding: $space-xs $space-md; 
+    transition: transform 0.3s;
     overflow: hidden;
     display: flex;
-    gap: 13px;
+    gap: $space-sm + 0.3rem;
 
     &:hover {
       transform: scale(1.05);
     }
-    p{
-        margin: auto 0;
+
+    p {
+      margin: auto 0;
     }
 
     img {
-      width: 30px;
-      height: 30px;
+      width: $icon-size * 0.6; 
+      height: $icon-size * 0.6;
       display: block;
     }
   }

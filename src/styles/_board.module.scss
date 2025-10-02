@@ -1,33 +1,35 @@
+@use "variables" as *;
+
 .board {
-  padding: 3rem 1rem;
+  padding: $space-lg $space-md;
   text-align: center;
 
   .title {
-    color: #e30613;
-    font-size: 2.2rem;
+    color: $color-primary;
+    font-size: $font-xxxl;
     font-weight: bold;
-    margin-bottom: 2.5rem;
+    margin-bottom: $space-xl;
   }
 
   .card {
-    background: #fff;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background: $color-white;
+    border-radius: $radius-lg;
+    padding: $space-card-padding;
+    box-shadow: $shadow-lg;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      box-shadow: $shadow-hover;
     }
 
     .imageWrapper {
-      width: 140px;
-      height: 140px;
-      margin: 0 auto 1rem auto;
+      width: $image-wrapper-size;
+      height: $image-wrapper-size;
+      margin: 0 auto $space-md auto;
       border-radius: 50%;
       overflow: hidden;
-      border: 3px solid #e30613;
+      border: $border-thick;
 
       img {
         width: 100%;
@@ -37,20 +39,20 @@
     }
 
     .name {
-      font-size: 1.2rem;
+      font-size: $font-lg;
       font-weight: bold;
-      margin-bottom: 0.3rem;
+      margin-bottom: $space-xs;
     }
 
     .position {
-      font-size: 1rem;
-      color: #666;
-      margin-bottom: 0.5rem;
+      font-size: $font-base;
+      color: $color-text-muted;
+      margin-bottom: $space-sm;
     }
 
     .desc {
-      font-size: 0.9rem;
-      color: #444;
+      font-size: $font-sm;
+      color: $color-text-dark;
     }
   }
 }

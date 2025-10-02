@@ -1,6 +1,88 @@
-$primary: #2B307F;
-$secondary: #3CA4DC;
-$text: #0f172a;
-$muted: #6c757d;
-$bg: #ffffff;
-$dark: #1e1e1e;
+// 🎨 Colors
+$primary: #2B307F;      
+$secondary: #3CA4DC;    
+$text: #0f172a;          
+$muted: #6c757d;        
+$bg: #ffffff;            
+$dark: #1e1e1e;         
+
+$color-primary: #e30613;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-shadow: rgba(0, 0, 0, 0.05);
+$color-border: #bababa;
+$color-muted: #cccccc; 
+$color-hover: #ba050c;
+$color-text-muted: #666;
+$color-text-dark: #444;
+
+
+// 🔠 Font Sizes
+$font-xxxl: 2.2rem; 
+$font-xxl: 2rem;    // h2
+$font-xl: 1.6rem; 
+$font-lg: 1.2rem; 
+$font-base: 1rem;  
+$font-md: 0.95rem; 
+$font-sm: 0.9rem;   
+
+// أيقونات
+$font-icon-lg: 47px;
+$font-icon-md: 28px;
+
+
+// 📏 Spacing
+$space-xs: 0.3rem;
+$space-sm: 0.5rem;
+$space-md: 1rem;
+$space-lg: 2rem;
+$space-xl: 2.5rem;
+$space-card-padding: 1.5rem;
+
+
+// ⬜ Borders & Radius
+$radius-sm: 6px;
+$radius-md: 8px;
+$radius-lg: 10px;
+$border-thick: 3px solid $color-primary;
+
+
+// 🌑 Shadows
+$shadow-sm: 0 2px 6px $color-shadow;
+$shadow-md: 0 4px 15px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.1);
+$shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+
+// 📐 Sizes
+$icon-size: 50px;
+$logo-size: 80px;
+$control-size: 50px;
+$bullet-size: 10px;
+$image-wrapper-size: 140px;
+$client-img-width: 100px;
+
+
+// 🔀 Gaps
+$gap-lg: 30px;
+$gap-sm: 8px;
+
+// 🎨 Extra Colors (Hero accent)
+$color-accent: #e63946;        
+$color-accent-dark: #c72c38; 
+
+// 🔠 Hero Font Sizes
+$font-hero-subtitle: 1.25rem;  // 20px
+$font-hero-title: 2.25rem;     // 36px
+$font-hero-text: 1rem;         // 16px
+
+// 📐 Hero Sizes
+$hero-padding-y: 80px;
+$radius-xl: 15px;             
+
+// 🎨 Extra Colors for Jobs
+$color-job: #ef1923;
+$color-job-dark: #c2131a;
+
+// 📐 Sizes
+$job-img-height: 240px;

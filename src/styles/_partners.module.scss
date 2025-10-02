@@ -1,25 +1,27 @@
+@use "variables" as *;
+
 .partners {
-  padding: 3rem 0;
+  padding: $space-xl 0;
   background: #f9f9f9;
 
   h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: $font-xxl;
+    margin-bottom: $space-xl;
   }
 
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1.5rem;
+    gap: $space-lg + $space-sm; // 1.5rem
     align-items: center;
     justify-items: center;
   }
 
   .card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 1rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background: $color-white;
+    border-radius: $radius-lg + 2px; // 12px
+    padding: $space-md;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
     text-align: center;
     height: 230px;
@@ -29,16 +31,16 @@
     }
 
     img {
-    object-fit: contain;
-    max-width: 120px;
-    height: 120px;
-    margin-bottom: .8rem;
+      object-fit: contain;
+      max-width: 120px;
+      height: 120px;
+      margin-bottom: 0.8rem;
     }
 
     p {
-      font-size: 0.9rem;
+      font-size: $font-sm; // 0.9rem
       font-weight: 500;
-      color: #333;
+      color: $color-text-dark;
     }
   }
 }

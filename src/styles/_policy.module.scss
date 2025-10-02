@@ -1,31 +1,33 @@
+@use "variables" as *;
+
 .policy {
-  padding: 3rem 1rem;
+  padding: $space-xl $space-md;
 
   .hero {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: $space-xl;
 
     h1 {
-      color: #e30613;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      color: $color-primary;
+      font-size: 2.5rem; 
+      margin-bottom: $space-md;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: $font-lg; // 1.2rem
       max-width: 800px;
       margin: 0 auto;
-      color: #555;
+      color: $color-text-muted;
     }
   }
 
   .section {
-    margin-bottom: 2.5rem;
+    margin-bottom: $space-xl;
 
     h2 {
-      color: #222;
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
+      color: $text;
+      font-size: $font-xl;
+      margin-bottom: $space-md;
       position: relative;
 
       &::after {
@@ -33,23 +35,23 @@
         display: block;
         width: 60px;
         height: 3px;
-        background: #e30613;
-        margin-top: 0.4rem;
+        background: $color-primary;
+        margin-top: $space-xs + 0.1rem; 
       }
     }
 
     p {
-      font-size: 1rem;
-      color: #444;
+      font-size: $font-base;
+      color: $color-text-dark;
       line-height: 1.7;
     }
 
     ul {
-      margin-top: 1rem;
+      margin-top: $space-md;
       padding-left: 1.2rem;
 
       li {
-        font-size: 1rem;
+        font-size: $font-base;
         margin-bottom: 0.6rem;
         line-height: 1.6;
       }

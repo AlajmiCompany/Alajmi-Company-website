@@ -1,79 +1,81 @@
+@use "variables" as *;
+
 .awards {
-  margin: 4rem 0;
+  margin: $space-xl 0;
 
   h2 {
-    font-size: 2rem;
+    font-size: $font-xxl;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin-bottom: $space-xl;
   }
 
   .slider {
-    margin-top: 2rem;
+    margin-top: $space-xl;
   }
 
   .card {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border: 1px solid #bababa;
+    background: $color-white;
+    padding: $space-md;
+    border-radius: $radius-md;
+    box-shadow: $shadow-md;
+    border: 1px solid $color-border;
 
     img {
       width: 100%;
       height: auto;
-      border-radius: 6px;
+      border-radius: $radius-sm;
     }
   }
 
-.controls {
+  .controls {
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: $gap-lg;
     margin-top: 0;
     display: flex;
 
-  .custom-prev,
-  .custom-next {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: var(--primary);
-    color: #fff;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s ease, transform 0.2s ease;
-
-  }
-  svg{
-    font-size: 47px;
-    cursor: pointer;
-    margin-top: 2rem;
-    
-    &:hover {
-    color: #ba050c;
-    }
-    }
-
-  .custom-pagination {
-    display: flex;
-    gap: 8px;
-
-    .swiper-pagination-bullet {
-      width: 10px;
-      height: 10px;
-      background: var(--muted);
+    .custom-prev,
+    .custom-next {
+      width: $control-size;
+      height: $control-size;
       border-radius: 50%;
-      transition: all 0.3s ease;
+      background: $color-primary;
+      color: $color-white;
+      font-size: $font-icon-md;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
 
-      &.swiper-pagination-bullet-active {
-        background: var(--primary);
-        transform: scale(1.2);
+    svg {
+      font-size: $font-icon-lg;
+      cursor: pointer;
+      margin-top: $space-xl;
+
+      &:hover {
+        color: $color-hover;
+      }
+    }
+
+    .custom-pagination {
+      display: flex;
+      gap: $gap-sm;
+
+      .swiper-pagination-bullet {
+        width: $bullet-size;
+        height: $bullet-size;
+        background: $color-muted;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+
+        &.swiper-pagination-bullet-active {
+          background: $color-primary;
+          transform: scale(1.2);
+        }
       }
     }
   }
-}
 }

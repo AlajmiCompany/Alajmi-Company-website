@@ -1,29 +1,31 @@
+@use "variables" as *;
+
 .projects {
-  padding: 60px 0;
-  background: #f8f9fa;
+  padding: 60px 0; 
+  background: #f8f9fa; 
 
   h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: $font-xxl;
+    margin-bottom: $space-sm; // 10px
   }
 
   .subtitle {
-    color: #666;
-    margin-bottom: 40px;
+    color: $color-text-muted; // #666
+    margin-bottom: $space-xl + $space-md; // 40px
   }
 
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    gap: 25px; // ممكن نضيف $gap-md = 25px
   }
 
   .card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px;
+    background: $color-white;
+    border-radius: $radius-lg + 2px; // 12px
+    padding: $space-lg; // 20px
     text-align: center;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 
     &:hover {
@@ -31,33 +33,33 @@
     }
 
     img {
-    max-width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
+      max-width: 100px;
+      height: 100px;
+      margin-bottom: $space-md + $space-sm; // 15px
     }
 
     h3 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
+      font-size: $font-lg;
+      margin-bottom: $space-sm; // 10px
     }
 
     p {
-      font-size: 0.9rem;
-      color: #444;
-      margin-bottom: 15px;
+      font-size: $font-sm;
+      color: $color-text-dark; // #444
+      margin-bottom: $space-md + $space-sm; // 15px
     }
 
     .more {
       display: inline-block;
       background: #d32f2f;
-      color: #fff;
+      color: $color-white;
       padding: 8px 16px;
-      border-radius: 8px;
+      border-radius: $radius-md;
       text-decoration: none;
       transition: background 0.3s;
 
       &:hover {
-        background: #b71c1c;
+        background: #b71c1c; 
       }
     }
   }

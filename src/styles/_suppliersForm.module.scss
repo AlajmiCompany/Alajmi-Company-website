@@ -1,19 +1,21 @@
+@use "variables" as *;
+
 .suppliersForm {
   max-width: 700px;
-  margin: 2rem auto;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 12px;
+  margin: $space-xl auto;
+  background: $color-white;
+  padding: $space-xl;
+  border-radius: $radius-lg + 2px; // 12px
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 
   h2 {
     text-align: center;
-    margin-bottom: 1.5rem;
-    color: #ef1923;
+    margin-bottom: $space-lg + $space-sm; // 1.5rem
+    color: $color-job; // #ef1923
   }
 
   .field {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.2rem; // custom
     display: flex;
     flex-direction: column;
 
@@ -22,23 +24,24 @@
       margin-bottom: 0.4rem;
     }
 
-    input, select {
+    input,
+    select {
       padding: 0.6rem 0.8rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+      border: 1px solid $color-muted;
+      border-radius: $radius-md; // 8px
       outline: none;
       transition: 0.3s;
 
       &:focus {
-        border-color: #ef1923;
-        box-shadow: 0 0 5px rgba(43,48,127,0.3);
+        border-color: $color-job;
+        box-shadow: 0 0 5px rgba($primary, 0.3); // rgba(43,48,127,0.3)
       }
     }
 
     .error {
-      color: #ef1923;
+      color: $color-job;
       font-size: 0.85rem;
-      margin-top: 0.3rem;
+      margin-top: $space-xs;
     }
   }
 
@@ -46,21 +49,21 @@
     width: 100%;
     padding: 0.8rem;
     border: none;
-    border-radius: 8px;
-    background: #ef1923;
-    color: #fff;
-    font-size: 1rem;
+    border-radius: $radius-md;
+    background: $color-job;
+    color: $color-white;
+    font-size: $font-base;
     font-weight: 600;
     cursor: pointer;
 
     &:hover {
-      background: #e97076;
+      background: #e97076; 
     }
   }
 }
 .error {
-  color: #ef1923;
+  color: $color-job;
   font-size: 0.8rem;
-  margin-top: 0.3rem;
+  margin-top: $space-xs;
   display: block;
 }

@@ -1,19 +1,21 @@
+@use "variables" as *;
+
 .about {
-  padding: 2rem 1rem; // قللنا المسافات
+  padding: $space-lg $space-md; 
 
   .companyTitle {
-    color: #e30613; // أحمر
-    font-size: 2.2rem;
+    color: $color-primary;
+    font-size: $font-xl;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: $space-md;
   }
 
   .section {
-    margin-top: 2.5rem;
+    margin-top: $space-xl;
 
     h2 {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
+      font-size: $font-lg;
+      margin-bottom: $space-md;
       position: relative;
 
       &::after {
@@ -21,8 +23,8 @@
         display: block;
         width: 50px;
         height: 3px;
-        background: #e30613;
-        margin-top: 0.3rem;
+        background: $color-primary;
+        margin-top: $space-xs;
       }
     }
   }
@@ -30,44 +32,45 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
+    gap: $space-md;
   }
-  .text{
-    h1{
-      color: #e30613;
+
+  .text {
+    h1 {
+      color: $color-primary;
     }
   }
 
   .card {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
+    background: $color-white;
+    padding: $space-md;
+    border-radius: $radius-md;
     text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: $shadow-sm;
 
-    
     p {
-      margin-top: 0.5rem;
-      font-size: 0.95rem;
+      margin-top: $space-sm;
+      font-size: $font-md;
     }
+
     .logo {
-  max-width: 80px;
-  max-height: 80px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
-}
+      max-width: $logo-size;
+      max-height: $logo-size;
+      object-fit: contain;
+      margin-bottom: $space-sm;
+    }
   }
 
   .icon {
-    width: 50px;
-    height: 50px;
+    width: $icon-size;
+    height: $icon-size;
     object-fit: contain;
   }
 
   .clientImg {
-    width: 100px;
+    width: $client-img-width;
     height: auto;
     object-fit: contain;
-    margin-bottom: 0.5rem;
+    margin-bottom: $space-sm;
   }
 }
