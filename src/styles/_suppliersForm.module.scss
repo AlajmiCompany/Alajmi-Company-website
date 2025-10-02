@@ -1,0 +1,66 @@
+.suppliersForm {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #ef1923;
+  }
+
+  .field {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    input, select {
+      padding: 0.6rem 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+
+      &:focus {
+        border-color: #ef1923;
+        box-shadow: 0 0 5px rgba(43,48,127,0.3);
+      }
+    }
+
+    .error {
+      color: #ef1923;
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+    }
+  }
+
+  .submitBtn {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    background: #ef1923;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      background: #e97076;
+    }
+  }
+}
+.error {
+  color: #ef1923;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  display: block;
+}

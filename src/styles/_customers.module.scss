@@ -1,0 +1,45 @@
+.customers {
+  margin: 4rem auto;
+  max-width: 1200px;
+  text-align: center;
+
+  .title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #2b307f;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+    grid-gap: 2rem;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+      max-height: 80px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+      margin: 0;
+    }
+  }
+}

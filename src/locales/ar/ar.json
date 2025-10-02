@@ -105,6 +105,51 @@
 },
 "boardofD":{
   "title": "مجلس الإدارة"
+},
+"media": {
+  "title": "المركز الإعلامي"
+},
+"customersPage": {
+  "title": "عملاؤنا"
+},
+"suppliersPage":{
+  "registrationTitle": "تسجيل الموردين",
+  "name": "اسم المورد",
+  "nickname": "الاسم المختصر",
+  "address": "العنوان",
+  "country": "الدولة",
+  "category": "تصنيف المورد",
+  "mobile": "رقم الجوال",
+  "fax": "الفاكس",
+  "commercialRecord": "السجل التجاري",
+  "bankName": "اسم البنك",
+  "accountNo": "رقم الحساب",
+  "iban": "رقم الآيبان",
+  "email": "البريد الإلكتروني",
+  "officer": "مسؤول التواصل",
+  "uploadFile": "رفع ملف",
+  "submit": "إرسال",
+  "select": "الرجاء تحديد اختيار",
+  "errors": {
+    "required": "هذا الحقل مطلوب",
+    "invalidEmail": "البريد الإلكتروني غير صالح",
+    "invalidIBAN": "رقم الآيبان غير صالح"
+  }
+},
+"suggestionsPage": {
+  "title": "الاقتراحات والشكاوي",
+  "subtitle": "نحن نقدر ملاحظاتكم لتحسين خدماتنا"
+},
+"contactUs": {
+  "sendMessage": "أرسل رسالة",
+  "keepInTouch": "ابقَ على تواصل",
+  "fullName": "الاسم الكامل",
+  "mobile": "رقم الجوال",
+  "email": "البريد الإلكتروني",
+  "subject": "الموضوع",
+  "message": "الرسالة",
+  "send": "إرسال",
+  "companyBranches": "فروع الشركة"
 }
 
 

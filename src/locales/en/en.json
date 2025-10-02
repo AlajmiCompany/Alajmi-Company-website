@@ -103,7 +103,53 @@
 },
 "boardofD": {
   "title": "Board of Directors"
+},
+"media": {
+  "title": "Media Center"
+},
+"customersPage": {
+  "title": "Our Customers"
+},
+"suppliersPage": {
+  "registrationTitle": "Supplier Registration",
+  "name": "Supplier Name",
+  "nickname": "Nickname",
+  "address": "Address",
+  "country": "Country",
+  "category": "Supplier Category",
+  "mobile": "Mobile",
+  "fax": "Fax",
+  "commercialRecord": "Commercial Record",
+  "bankName": "Bank Name",
+  "accountNo": "Account No.",
+  "iban": "IBAN",
+  "email": "Email",
+  "officer": "Communication Officer",
+  "uploadFile": "Upload File",
+  "submit": "Submit",
+  "select": "Please Select",
+  "errors": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email format",
+    "invalidIBAN": "Invalid IBAN"
+  }
+},
+"suggestionsPage": {
+  "title": "Suggestions & Complaints",
+  "subtitle": "We value your feedback to improve our services"
+},
+"contactUs": {
+  "sendMessage": "Send Message",
+  "keepInTouch": "Keep in Touch",
+  "fullName": "Full Name",
+  "mobile": "Mobile",
+  "email": "Email",
+  "subject": "Subject",
+  "message": "Message",
+  "send": "Send",
+  "companyBranches": "Company Branches"
 }
+
 
 
 }

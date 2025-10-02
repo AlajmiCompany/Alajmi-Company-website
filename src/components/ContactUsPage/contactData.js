@@ -1,0 +1,40 @@
+const branchesData = [
+  {
+    id: 1,
+    city_en: "Riyadh",
+    city_ar: "الرياض",
+    phone: "966-112-402-450",
+    email: "info@alajmicompany.com",
+    address_en: "Saudi Arabia Riyadh",
+    address_ar: "السعودية - الرياض",
+    fax: "+966 112-402-458",
+    postal: "86059 Riyadh 11622",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.3532291151966!2d46.791119315003!3d24.8091102840827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038f5a8d9f7d%3A0x4c7d43c4af22b9c!2sImam%20Abdullah%20Ibn%20Saud%20Ibn%20Abdulaziz%20Rd%2C%20Riyadh!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa",
+  },
+  {
+    id: 2,
+    city_en: "Jazan",
+    city_ar: "جازان",
+    phone: "966-112-402-450",
+    email: "info@alajmicompany.com",
+    address_en: "Saudi Arabia Jazan",
+    address_ar: "السعودية - جازان",
+    fax: "+966 173-310-066",
+    postal: "3044 Jazan 45142",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.3532291151966!2d46.791119315003!3d24.8091102840827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038f5a8d9f7d%3A0x4c7d43c4af22b9c!2sImam%20Abdullah%20Ibn%20Saud%20Ibn%20Abdulaziz%20Rd%2C%20Riyadh!5e0!3m2!1sen!2ssa!4v1700000000001!5m2!1sen!2ssa",
+  },
+  {
+    id: 3,
+    city_en: "Hofuf",
+    city_ar: "الهفوف",
+    phone: "966-112-402-450",
+    email: "info@alajmicompany.com",
+    address_en: "Hofuf - Saudi Arabia",
+    address_ar: "الهفوف - السعودية",
+    fax: "966 1359-287-04",
+    postal: "447 Al-Ehsaa 31980",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.3532291151966!2d46.791119315003!3d24.8091102840827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038f5a8d9f7d%3A0x4c7d43c4af22b9c!2sImam%20Abdullah%20Ibn%20Saud%20Ibn%20Abdulaziz%20Rd%2C%20Riyadh!5e0!3m2!1sen!2ssa!4v1700000000002!5m2!1sen!2ssa",
+  },
+];
+
+export default branchesData;
