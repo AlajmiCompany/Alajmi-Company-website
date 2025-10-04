@@ -18,20 +18,25 @@ const designs = [
 
 export default function Designs() {
   const { t } = useTranslation();
+  const { i18n } = useTranslation();
+  const isArabic = i18n.language === "ar";
 
   return (
     <section id="designs" className={styles.designs}>
       <div className=" text-center">
         {/* Auto-scroll wrapper */}
         <div className={styles.scrollWrapper}>
-          <div className={styles.scrollContent}>
-            {designs.concat(designs).map((d, i) => ( // نكررها مرتين عشان الماركيه يكون سلس
-              <a key={i} href={d.link} target="_blank" rel="noopener noreferrer">
-                <p>{d.text}</p>
-                <img src="/logo.png" alt={`Design ${d.id}`} />
-              </a>
-            ))}
-          </div>
+<div
+  className={`${styles.scrollContent} ${isArabic ? styles.rtldesign : ""}`}
+>
+  {designs.concat(designs).map((d, i) => (
+    <a key={i} href={d.link} target="_blank" rel="noopener noreferrer">
+      <img src="/logo.png" alt={`Design ${d.id}`} />
+      <p>{d.text}</p>
+    </a>
+  ))}
+</div>
+
         </div>
       </div>
     </section>

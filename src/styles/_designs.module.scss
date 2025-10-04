@@ -63,3 +63,23 @@
     transform: translateX(-50%);
   }
 }
+
+
+.rtldesign {
+  direction: rtl;
+  flex-direction: row-reverse;
+  animation: scroll-right 10s linear infinite;
+
+  a {
+    text-align: right;
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
